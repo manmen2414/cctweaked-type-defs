@@ -63,8 +63,8 @@ function baseColors.unpackRGB(rgb) end
 
 ---@see colors.packRGB
 ---@see colors.unpackRGB
----@overload fun(r_or_rgb: number,g:nil,b:nil): number,number,number
----@overload fun(r_or_rgb: number,g:number,b:number): number
+---@overload fun(rgb: number): r:number,g:number,b:number Deprecated: Use packRGB or unpackRGB directly.
+---@overload fun(r: number,g:number,b:number): rgb:number Deprecated: Use packRGB or unpackRGB directly.
 ---@param r_or_rgb number The red channel, should be between 0 and 1. / The combined hexadecimal colour.
 ---@param g number? The green channel, should be between 0 and 1.
 ---@param b number? The blue channel, should be between 0 and 1.
